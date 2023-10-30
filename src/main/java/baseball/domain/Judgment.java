@@ -3,7 +3,7 @@ package baseball.domain;
 import java.util.List;
 
 public class Judgment {
-    public int collectCount(List<Integer> computer, List<Integer> player) {
+    public int correctCount(List<Integer> computer, List<Integer> player) {
         int result = 0;
         for (int i = 0; i < player.size(); i++) {
             int playerNumber = player.get(i);
