@@ -13,8 +13,14 @@ public class Application {
 //        List<Integer> numbers = numberGenerator.createRandomNumbers();
 //        System.out.println("numbers = " + numbers);
 
+//        Judgment judgment = new Judgment();
+//        int count = judgment.collectCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
+//        System.out.println("count = " + count);
+
         Judgment judgment = new Judgment();
-        int count = judgment.collectCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
-        System.out.println("count = " + count);
+        boolean result = judgment.hasPlace(Arrays.asList(1, 2, 3), 0, 1);
+        boolean result1 = judgment.hasPlace(Arrays.asList(1, 2, 3), 1, 1);
+        System.out.println("result = " + result);
+        System.out.println("result1 = " + result1);
     }
 }
